@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Taksim Doner and Burger">
+  <defs>
+    <linearGradient id="o" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1410"/><stop offset="0.6" stop-color="#5a2118"/><stop offset="1" stop-color="#7a2a16"/>
+    </linearGradient>
+    <radialGradient id="og" cx="0.3" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#F5A623" stop-opacity="0.5"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#o)"/>
+  <rect width="1200" height="630" fill="url(#og)"/>
+  <circle cx="980" cy="150" r="120" fill="#E23744" opacity="0.18"/>
+  <circle cx="1050" cy="520" r="150" fill="#F5A623" opacity="0.12"/>
+  <g transform="translate(80,210)">
+    <rect x="0" y="0" width="58" height="58" rx="14" fill="#E23744"/>
+    <path d="M14 42 Q22 18 29 18 Q36 18 44 42 Q29 35 14 42 Z" fill="#F5A623"/>
+    <rect x="27" y="10" width="4" height="32" rx="2" fill="#fff" opacity="0.85"/>
+  </g>
+  <text x="158" y="252" font-family="Poppins, Segoe UI, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Taksim Döner &amp; Burger</text>
+  <text x="160" y="320" font-family="Inter, Segoe UI, sans-serif" font-size="34" font-weight="500" fill="#F5A623">Hot döner &amp; burgers in the heart of Taksim — 24/7</text>
+  <g transform="translate(160,380)" font-family="Inter, Segoe UI, sans-serif" font-size="26" font-weight="600">
+    <rect x="0" y="0" width="210" height="56" rx="28" fill="#1E8E3E"/>
+    <circle cx="34" cy="28" r="8" fill="#fff"/>
+    <text x="54" y="36" fill="#fff">Open · 24h</text>
+    <text x="250" y="36" fill="#ffffff">★ 4.5 on Google</text>
+  </g>
+</svg>

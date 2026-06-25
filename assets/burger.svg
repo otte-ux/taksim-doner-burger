@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Burger">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBE3C8"/><stop offset="1" stop-color="#F2C18C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#b)"/>
+  <circle cx="400" cy="300" r="240" fill="#fff" opacity="0.3"/>
+  <ellipse cx="400" cy="470" rx="220" ry="44" fill="#000" opacity="0.10"/>
+  <g transform="translate(180,140)">
+    <path d="M0 110 Q220 -10 440 110 L440 124 Q220 78 0 124 Z" fill="#E8A85C"/>
+    <ellipse cx="220" cy="108" rx="220" ry="34" fill="#F2C57C"/>
+    <circle cx="150" cy="86" r="6" fill="#fff" opacity="0.85"/>
+    <circle cx="250" cy="80" r="6" fill="#fff" opacity="0.85"/>
+    <circle cx="320" cy="96" r="6" fill="#fff" opacity="0.85"/>
+    <path d="M8 128 Q220 96 432 128 Q220 184 8 128 Z" fill="#54B05A"/>
+    <rect x="10" y="160" width="420" height="46" rx="20" fill="#7a3b1e"/>
+    <rect x="24" y="200" width="392" height="30" rx="14" fill="#F2B807"/>
+    <path d="M22 228 Q220 272 418 228 L418 244 Q220 296 22 244 Z" fill="#E8A85C"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+# Local tooling / not part of the site
+.claude/
+.claude-flow/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# localize-script artifacts
+index.html.bak

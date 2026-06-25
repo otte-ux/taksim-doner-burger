@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Taksim Doner and Burger food">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a1410"/>
+      <stop offset="0.55" stop-color="#5a2118"/>
+      <stop offset="1" stop-color="#7a2a16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#F5A623" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#E23744" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#hg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <!-- soft bokeh -->
+  <circle cx="220" cy="180" r="120" fill="#F5A623" opacity="0.10"/>
+  <circle cx="1380" cy="760" r="180" fill="#E23744" opacity="0.12"/>
+  <circle cx="1280" cy="160" r="70" fill="#F5A623" opacity="0.10"/>
+  <!-- plate -->
+  <ellipse cx="800" cy="560" rx="430" ry="120" fill="#000" opacity="0.25"/>
+  <ellipse cx="800" cy="520" rx="420" ry="150" fill="#FAF7F2"/>
+  <ellipse cx="800" cy="512" rx="360" ry="118" fill="#fff"/>
+  <!-- burger -->
+  <g transform="translate(560,330)">
+    <path d="M0 120 Q150 30 300 120 L300 130 Q150 95 0 130 Z" fill="#E8A85C"/>
+    <ellipse cx="150" cy="118" rx="150" ry="22" fill="#F2C57C"/>
+    <circle cx="110" cy="104" r="4" fill="#fff" opacity="0.8"/>
+    <circle cx="180" cy="100" r="4" fill="#fff" opacity="0.8"/>
+    <circle cx="220" cy="110" r="4" fill="#fff" opacity="0.8"/>
+    <path d="M6 132 Q150 110 294 132 Q150 168 6 132 Z" fill="#54B05A"/>
+    <rect x="8" y="150" width="284" height="34" rx="14" fill="#7a3b1e"/>
+    <rect x="16" y="176" width="268" height="22" rx="10" fill="#F2B807"/>
+    <path d="M14 196 Q150 226 286 196 L286 206 Q150 250 14 206 Z" fill="#E8A85C"/>
+  </g>
+  <!-- doner cone -->
+  <g transform="translate(980,300)">
+    <rect x="86" y="0" width="10" height="250" rx="5" fill="#8a8f98"/>
+    <path d="M91 30 Q150 40 150 90 Q150 110 91 116 Q40 110 40 90 Q40 40 91 30 Z" fill="#9a5a2a"/>
+    <path d="M91 96 Q160 108 160 150 Q160 172 91 180 Q30 172 30 150 Q30 108 91 96 Z" fill="#a9652f"/>
+    <path d="M91 160 Q172 172 172 210 Q172 236 91 246 Q20 236 20 210 Q20 172 91 160 Z" fill="#b97338"/>
+    <path d="M91 220 Q150 228 150 244 L40 244 Q40 228 91 220 Z" fill="#caa15a"/>
+  </g>
+</svg>

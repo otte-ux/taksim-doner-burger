@@ -1,0 +1,12 @@
+{
+  "name": "Taksim Döner & Burger",
+  "short_name": "Taksim Döner",
+  "description": "Hot döner & burgers in the heart of Taksim — open 24/7.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#E23744",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

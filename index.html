@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#E23744" />
+
+  <title>Taksim Döner &amp; Burger — 7/24 Sıcak Döner &amp; Burger | Taksim, İstanbul</title>
+  <meta name="description" content="Taksim'in göbeğinde 7/24 açık, taze döner ve burger. Metro'ya 1 dakika. · Hot döner &amp; burgers in the heart of Taksim, open 24/7. 1 min from the Metro." />
+
+  <link rel="canonical" href="https://taksimdonerburger.com/" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Taksim Döner &amp; Burger — open 24/7 in the heart of Taksim" />
+  <meta property="og:description" content="Taze döner &amp; burger, 7/24 açık. Metro'ya 1 dakika. · Fresh döner &amp; burgers, open 24/7, 1 min from the Metro." />
+  <meta property="og:image" content="assets/og.svg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Preconnect to media/lib CDNs -->
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Restaurant JSON-LD (rich) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Taksim Döner & Burger",
+    "image": "https://taksimdonerburger.com/assets/og.svg",
+    "url": "https://taksimdonerburger.com/",
+    "telephone": "+90XXXXXXXXXX",
+    "servesCuisine": ["Döner", "Turkish", "Burgers", "Fast Food", "Halal"],
+    "priceRange": "₺₺",
+    "address": { "@type": "PostalAddress", "streetAddress": "Taksim Meydanı, Beyoğlu", "addressLocality": "İstanbul", "addressRegion": "İstanbul", "postalCode": "34435", "addressCountry": "TR" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.0364979, "longitude": 28.9826732 },
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "1200" },
+    "hasMap": "https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z",
+    "sameAs": ["https://instagram.com/"],
+    "acceptsReservations": "False"
+  }
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ===================== TOP BAR ===================== -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brandmark" href="#top" aria-label="Taksim Döner & Burger — home">
+        <img class="logo" src="assets/favicon.svg" width="30" height="30" alt="" />
+        <span>Taksim <span class="accent">Döner</span> &amp; Burger</span>
+      </a>
+      <div class="spacer"></div>
+      <span class="badge-open" id="openBadge" role="status" data-openstate>
+        <span class="dot"></span>
+        <span data-tr="Açık · 7/24" data-en="Open · 24h">Açık · 7/24</span>
+      </span>
+      <div class="lang-toggle" role="group" aria-label="Language / Dil">
+        <span class="pill" aria-hidden="true"></span>
+        <button id="btnTR" type="button" aria-pressed="true">TR</button>
+        <button id="btnEN" type="button" aria-pressed="false">EN</button>
+      </div>
+      <a class="icon-btn topbar-phone" href="tel:+90XXXXXXXXXX" aria-label="Call / Ara">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.05.36 2.07.7 3.06a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.02-1.27a2 2 0 0 1 2.11-.45c.99.34 2.01.57 3.06.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+  </header>
+  <span id="top"></span>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Taksim Döner & Burger">
+    <div class="media">
+      <img class="kb" id="heroPoster" src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1600&h=1000&q=80" data-fallback="assets/hero.svg" width="1600" height="1000" alt="Sıcak döner ve burger / Hot döner and burgers" fetchpriority="high" />
+      <video id="heroVideo" muted loop playsinline autoplay preload="metadata" poster="assets/hero.svg" aria-hidden="true">
+        <source src="assets/video/hero-1080.webm" type="video/webm" />
+        <source src="assets/video/hero-1080.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="scrim"></div>
+    <div class="wrap">
+      <h1 id="heroTitle" data-tr="Taksim'in göbeğinde sıcak döner &amp; burger." data-en="Hot döner &amp; burgers in the heart of Taksim.">Taksim'in göbeğinde sıcak döner &amp; burger.</h1>
+      <p class="hook" data-tr="7/24 açığız — taze, doyurucu, hızlı. Metro'ya 1 dakika." data-en="Open 24/7 — fresh, generous, fast. One minute from the Metro.">7/24 açığız — taze, doyurucu, hızlı. Metro'ya 1 dakika.</p>
+      <div class="chips">
+        <span class="chip"><span class="star">★</span> <span class="tnum">4.5</span> <span data-tr="Google'da" data-en="on Google">Google'da</span></span>
+        <span class="chip">📍 <span data-tr="Taksim Meydanı · Metro'ya 1 dk" data-en="Taksim Square · 1 min from Metro">Taksim Meydanı · Metro'ya 1 dk</span></span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#menu" data-tr="Menüyü Gör" data-en="View Menu">Menüyü Gör</a>
+        <a class="btn btn-light" href="https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z" target="_blank" rel="noopener" data-tr="Yol Tarifi" data-en="Get Directions">Yol Tarifi</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span class="mouse"></span><span data-tr="Kaydır" data-en="Scroll">Kaydır</span></div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- ===================== TRUST ===================== -->
+  <div class="trust">
+    <div class="wrap">
+      <span class="item"><span class="star">★</span> <span class="tnum" data-count="4.5">4.5</span> <span class="sub" data-tr="Google puanı" data-en="Google rating">Google puanı</span></span>
+      <span class="item"><span class="tnum" data-count="1200" data-suffix="+">1,200+</span> <span class="sub" data-tr="değerlendirme" data-en="reviews">değerlendirme</span></span>
+      <span class="item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span data-tr="7/24 Açık" data-en="Open 24 hours">7/24 Açık</span>
+      </span>
+      <span class="item"><span class="tnum">₺₺</span> <span class="sub" data-tr="uygun fiyat" data-en="budget-friendly">uygun fiyat</span></span>
+      <span class="item">✓ <span data-tr="Helal (doğrulanacak)" data-en="Halal (to verify)">Helal (doğrulanacak)</span></span>
+    </div>
+  </div>
+
+  <!-- ===================== MENU ===================== -->
+  <section id="menu">
+    <div class="menu-tabs-shell">
+      <nav class="menu-tabs" id="menuTabs" aria-label="Menu categories">
+        <a href="#cat-doner"  data-tr="Döner"  data-en="Döner">Döner</a>
+        <a href="#cat-burger" data-tr="Burger" data-en="Burgers">Burger</a>
+        <a href="#cat-wrap"   data-tr="Dürüm"  data-en="Wraps">Dürüm</a>
+        <a href="#cat-sides"  data-tr="Yanlar" data-en="Sides">Yanlar</a>
+        <a href="#cat-drinks" data-tr="İçecek" data-en="Drinks">İçecek</a>
+      </nav>
+    </div>
+
+    <div class="wrap section">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-tr="Menü" data-en="Menu">Menü</span>
+        <h2 data-tr="Fotoğraflı menü" data-en="Photo menu">Fotoğraflı menü</h2>
+        <p class="lead" data-tr="Gördüğünü ısmarla. Fiyatlar net, porsiyonlar büyük. Fotoğrafa dokun, yakından gör." data-en="Order what you see. Clear prices, big portions. Tap any photo for a closer look.">Gördüğünü ısmarla. Fiyatlar net, porsiyonlar büyük. Fotoğrafa dokun, yakından gör.</p>
+      </div>
+
+      <!-- DÖNER -->
+      <div class="menu-cat" id="cat-doner">
+        <h3 class="reveal"><span class="em">🥙</span> <span data-tr="Döner" data-en="Döner">Döner</span></h3>
+        <div class="menu-grid">
+          <article class="card reveal" data-name-tr="Tavuk Döner Dürüm" data-name-en="Chicken Döner Wrap" data-price="160" data-img="assets/doner.svg">
+            <figure><button class="photo" type="button" aria-label="Tavuk Döner Dürüm"><img src="https://images.unsplash.com/photo-1633321702518-7feccafb94d5?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/doner.svg" width="800" height="600" loading="eager" decoding="async" alt="Tavuk Döner Dürüm / Chicken Döner Wrap" /></button><span class="tag popular" data-tr="Popüler" data-en="Popular">Popüler</span></figure>
+            <div class="body"><div class="name"><span data-tr="Tavuk Döner Dürüm" data-en="Chicken Döner Wrap">Tavuk Döner Dürüm</span><span class="en2" data-tr="Chicken Döner Wrap" data-en="Tavuk Döner Dürüm">Chicken Döner Wrap</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺160</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Et Döner Porsiyon" data-name-en="Beef Döner Plate" data-price="320" data-img="assets/doner.svg">
+            <figure><button class="photo" type="button" aria-label="Et Döner Porsiyon"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/doner.svg" width="800" height="600" loading="eager" decoding="async" alt="Et Döner Porsiyon / Beef Döner Plate" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Et Döner Porsiyon" data-en="Beef Döner Plate">Et Döner Porsiyon</span><span class="en2" data-tr="Beef Döner Plate" data-en="Et Döner Porsiyon">Beef Döner Plate</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺320</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Karışık Döner" data-name-en="Mixed Döner" data-price="280" data-img="assets/doner.svg">
+            <figure><button class="photo" type="button" aria-label="Karışık Döner"><img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/doner.svg" width="800" height="600" loading="eager" decoding="async" alt="Karışık Döner / Mixed Döner" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Karışık Döner" data-en="Mixed Döner">Karışık Döner</span><span class="en2" data-tr="Mixed Döner" data-en="Karışık Döner">Mixed Döner</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺280</span><span class="price-approx tnum"></span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- BURGERS -->
+      <div class="menu-cat" id="cat-burger">
+        <h3 class="reveal"><span class="em">🍔</span> <span data-tr="Burger" data-en="Burgers">Burger</span></h3>
+        <div class="menu-grid">
+          <article class="card reveal" data-name-tr="Klasik Burger" data-name-en="Classic Burger" data-price="180" data-img="assets/burger.svg">
+            <figure><button class="photo" type="button" aria-label="Klasik Burger"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/burger.svg" width="800" height="600" loading="eager" decoding="async" alt="Klasik Burger / Classic Burger" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Klasik Burger" data-en="Classic Burger">Klasik Burger</span><span class="en2" data-tr="Classic Burger" data-en="Klasik Burger">Classic Burger</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺180</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Cheeseburger" data-name-en="Cheeseburger" data-price="200" data-img="assets/burger.svg">
+            <figure><button class="photo" type="button" aria-label="Cheeseburger"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/burger.svg" width="800" height="600" loading="eager" decoding="async" alt="Cheeseburger" /></button><span class="tag popular" data-tr="Popüler" data-en="Popular">Popüler</span></figure>
+            <div class="body"><div class="name"><span data-tr="Cheeseburger" data-en="Cheeseburger">Cheeseburger</span><span class="en2" data-tr="Cheeseburger" data-en="Cheeseburger">Cheeseburger</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺200</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Double Burger" data-name-en="Double Burger" data-price="260" data-img="assets/burger.svg">
+            <figure><button class="photo" type="button" aria-label="Double Burger"><img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/burger.svg" width="800" height="600" loading="eager" decoding="async" alt="Double Burger" /></button><span class="tag spicy" data-tr="Acılı opsiyon" data-en="Spicy option">Acılı opsiyon</span></figure>
+            <div class="body"><div class="name"><span data-tr="Double Burger" data-en="Double Burger">Double Burger</span><span class="en2" data-tr="Double Burger" data-en="Double Burger">Double Burger</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺260</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Tavuk Burger" data-name-en="Chicken Burger" data-price="170" data-img="assets/burger.svg">
+            <figure><button class="photo" type="button" aria-label="Tavuk Burger"><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/burger.svg" width="800" height="600" loading="eager" decoding="async" alt="Tavuk Burger / Chicken Burger" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Tavuk Burger" data-en="Chicken Burger">Tavuk Burger</span><span class="en2" data-tr="Chicken Burger" data-en="Tavuk Burger">Chicken Burger</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺170</span><span class="price-approx tnum"></span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- WRAPS -->
+      <div class="menu-cat" id="cat-wrap">
+        <h3 class="reveal"><span class="em">🌯</span> <span data-tr="Dürüm" data-en="Wraps">Dürüm</span></h3>
+        <div class="menu-grid">
+          <article class="card reveal" data-name-tr="Tavuk Dürüm" data-name-en="Chicken Wrap" data-price="150" data-img="assets/wrap.svg">
+            <figure><button class="photo" type="button" aria-label="Tavuk Dürüm"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/wrap.svg" width="800" height="600" loading="eager" decoding="async" alt="Tavuk Dürüm / Chicken Wrap" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Tavuk Dürüm" data-en="Chicken Wrap">Tavuk Dürüm</span><span class="en2" data-tr="Chicken Wrap" data-en="Tavuk Dürüm">Chicken Wrap</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺150</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Et Dürüm" data-name-en="Beef Wrap" data-price="190" data-img="assets/wrap.svg">
+            <figure><button class="photo" type="button" aria-label="Et Dürüm"><img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/wrap.svg" width="800" height="600" loading="eager" decoding="async" alt="Et Dürüm / Beef Wrap" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Et Dürüm" data-en="Beef Wrap">Et Dürüm</span><span class="en2" data-tr="Beef Wrap" data-en="Et Dürüm">Beef Wrap</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺190</span><span class="price-approx tnum"></span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- SIDES -->
+      <div class="menu-cat" id="cat-sides">
+        <h3 class="reveal"><span class="em">🍟</span> <span data-tr="Yanlar" data-en="Sides">Yanlar</span></h3>
+        <div class="menu-grid">
+          <article class="card reveal" data-name-tr="Patates" data-name-en="Fries" data-price="70" data-img="assets/sides.svg">
+            <figure><button class="photo" type="button" aria-label="Patates"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/sides.svg" width="800" height="600" loading="eager" decoding="async" alt="Patates / Fries" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Patates" data-en="Fries">Patates</span><span class="en2" data-tr="Fries" data-en="Patates">Fries</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺70</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Soğan Halkası" data-name-en="Onion Rings" data-price="90" data-img="assets/sides.svg">
+            <figure><button class="photo" type="button" aria-label="Soğan Halkası"><img src="https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/sides.svg" width="800" height="600" loading="eager" decoding="async" alt="Soğan Halkası / Onion Rings" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Soğan Halkası" data-en="Onion Rings">Soğan Halkası</span><span class="en2" data-tr="Onion Rings" data-en="Soğan Halkası">Onion Rings</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺90</span><span class="price-approx tnum"></span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="menu-cat" id="cat-drinks">
+        <h3 class="reveal"><span class="em">🥤</span> <span data-tr="İçecek" data-en="Drinks">İçecek</span></h3>
+        <div class="menu-grid">
+          <article class="card reveal" data-name-tr="Ayran" data-name-en="Ayran" data-price="30" data-img="assets/drinks.svg">
+            <figure><button class="photo" type="button" aria-label="Ayran"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/drinks.svg" width="800" height="600" loading="eager" decoding="async" alt="Ayran" /></button><span class="tag veg" data-tr="Yerel" data-en="Local">Yerel</span></figure>
+            <div class="body"><div class="name"><span data-tr="Ayran" data-en="Ayran">Ayran</span><span class="en2" data-tr="Yoğurt içeceği" data-en="Yogurt drink">Yoğurt içeceği</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺30</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Kola" data-name-en="Soft Drink" data-price="50" data-img="assets/drinks.svg">
+            <figure><button class="photo" type="button" aria-label="Kola"><img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/drinks.svg" width="800" height="600" loading="eager" decoding="async" alt="Kola / Soft Drink" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Kola" data-en="Soft Drink">Kola</span><span class="en2" data-tr="Soft Drink" data-en="Kola">Soft Drink</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺50</span><span class="price-approx tnum"></span></div></div>
+          </article>
+          <article class="card reveal" data-name-tr="Su" data-name-en="Water" data-price="20" data-img="assets/drinks.svg">
+            <figure><button class="photo" type="button" aria-label="Su"><img src="https://images.unsplash.com/photo-1560023907-5f339617ea30?auto=format&fit=crop&w=800&h=600&q=80" data-fallback="assets/drinks.svg" width="800" height="600" loading="eager" decoding="async" alt="Su / Water" /></button></figure>
+            <div class="body"><div class="name"><span data-tr="Su" data-en="Water">Su</span><span class="en2" data-tr="Water" data-en="Su">Water</span></div>
+            <div class="priceline"><span class="price-chip tnum">₺20</span><span class="price-approx tnum"></span></div></div>
+          </article>
+        </div>
+      </div>
+
+      <p class="menu-note" data-tr="Fiyatlar örnektir — gerçek menü ile güncelleyin. ₺ yanındaki ≈ €/$ yaklaşıktır." data-en="Prices are placeholders — replace with the real menu. The ≈ €/$ next to ₺ is approximate.">Fiyatlar örnektir — gerçek menü ile güncelleyin. ₺ yanındaki ≈ €/$ yaklaşıktır.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section alt" id="gallery">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-tr="Ortam" data-en="The vibe">Ortam</span>
+        <h2 data-tr="Bir bakış" data-en="A look inside">Bir bakış</h2>
+      </div>
+      <div class="gallery">
+        <figure class="wide reveal-img" data-name-tr="Izgara başında" data-name-en="At the grill"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&h=600&q=80" data-fallback="assets/doner.svg" width="900" height="600" loading="lazy" decoding="async" alt="Izgara / Grill" /><figcaption data-tr="Izgara başında" data-en="At the grill">Izgara başında</figcaption></figure>
+        <figure class="tall reveal-img" data-name-tr="Döner şişte" data-name-en="Döner on the spit"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&h=800&q=80" data-fallback="assets/doner.svg" width="600" height="800" loading="lazy" decoding="async" alt="Döner şişte / Döner on the spit" /><figcaption data-tr="Döner şişte" data-en="Döner on the spit">Döner şişte</figcaption></figure>
+        <figure class="reveal-img" data-name-tr="Taze burger" data-name-en="Fresh burger"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&h=600&q=80" data-fallback="assets/burger.svg" width="600" height="600" loading="lazy" decoding="async" alt="Taze burger / Fresh burger" /><figcaption data-tr="Taze burger" data-en="Fresh burger">Taze burger</figcaption></figure>
+        <figure class="reveal-img" data-name-tr="Taksim sokakları" data-name-en="Taksim streets"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&h=600&q=80" data-fallback="assets/hero.svg" width="600" height="600" loading="lazy" decoding="async" alt="Taksim / İstanbul" /><figcaption data-tr="Taksim sokakları" data-en="Taksim streets">Taksim sokakları</figcaption></figure>
+        <figure class="reveal-img" data-name-tr="Sokak lezzeti" data-name-en="Street food"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&h=600&q=80" data-fallback="assets/sides.svg" width="600" height="600" loading="lazy" decoding="async" alt="Sokak lezzeti / Street food" /><figcaption data-tr="Sokak lezzeti" data-en="Street food">Sokak lezzeti</figcaption></figure>
+        <figure class="wide reveal-img" data-name-tr="Mutlu misafirler" data-name-en="Happy guests"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&h=600&q=80" data-fallback="assets/wrap.svg" width="900" height="600" loading="lazy" decoding="async" alt="Mutlu misafirler / Happy guests" /><figcaption data-tr="Mutlu misafirler" data-en="Happy guests">Mutlu misafirler</figcaption></figure>
+      </div>
+      <p class="menu-note" data-tr="Görseller geçici (telifsiz stok) — sahibinin gerçek fotoğraflarıyla birebir değiştirilir." data-en="Images are temporary (free stock) — swap 1:1 with the owner's real photos.">Görseller geçici (telifsiz stok) — sahibinin gerçek fotoğraflarıyla birebir değiştirilir.</p>
+    </div>
+  </section>
+
+  <!-- ===================== STATS BAND ===================== -->
+  <section class="stats" aria-label="Numbers">
+    <div class="wrap">
+      <div class="grid">
+        <div class="stat reveal"><div class="n tnum"><span data-count="4.5">4.5</span><span class="u">★</span></div><div class="l" data-tr="Google puanı" data-en="Google rating">Google puanı</div></div>
+        <div class="stat reveal"><div class="n tnum"><span data-count="1200" data-suffix="+">1200+</span></div><div class="l" data-tr="değerlendirme" data-en="reviews">değerlendirme</div></div>
+        <div class="stat reveal"><div class="n">24/7</div><div class="l" data-tr="her gün açık" data-en="open every day">her gün açık</div></div>
+        <div class="stat reveal"><div class="n tnum">~<span data-count="3">3</span><span class="u" data-tr="dk" data-en="min">dk</span></div><div class="l" data-tr="ortalama servis" data-en="average service">ortalama servis</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY ===================== -->
+  <section class="section accent" id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-tr="Neden burada?" data-en="Why stop here">Neden burada?</span>
+        <h2 data-tr="Tek mola, tam doyum" data-en="One stop, fully satisfied">Tek mola, tam doyum</h2>
+      </div>
+      <div class="why-grid">
+        <div class="feature reveal">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 11h16l-1 8H5z"/></svg></div>
+          <h3 data-tr="Kocaman porsiyon" data-en="Huge portions">Kocaman porsiyon</h3>
+          <p data-tr="Doyurucu döner ve burgerler — paranın hakkını verir." data-en="Generous döner and burgers — real value for money.">Doyurucu döner ve burgerler — paranın hakkını verir.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2c0 3-2 4-2 7a3 3 0 0 0 6 0c0-3-2-4-2-7M16 4c0 2-1 3-1 5a2 2 0 0 0 4 0c0-2-1-3-1-5"/></svg></div>
+          <h3 data-tr="Izgaradan taze" data-en="Fresh off the grill">Izgaradan taze</h3>
+          <p data-tr="Sıcacık, anında pişer — bekleyen değil, taze servis." data-en="Hot and made to order — never sitting, always fresh.">Sıcacık, anında pişer — bekleyen değil, taze servis.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
+          <h3 data-tr="İngilizce konuşulur" data-en="English-friendly">İngilizce konuşulur</h3>
+          <p data-tr="Turistlere alışkın, güler yüzlü ekip. Sipariş kolay." data-en="Friendly staff used to travelers. Ordering is easy.">Turistlere alışkın, güler yüzlü ekip. Sipariş kolay.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-12h-7z"/></svg></div>
+          <h3 data-tr="Hızlı servis" data-en="Fast service">Hızlı servis</h3>
+          <p data-tr="Acelen mi var? Birkaç dakikada elinde." data-en="In a hurry? In your hands in minutes.">Acelen mi var? Birkaç dakikada elinde.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="section alt" id="reviews">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-tr="Yorumlar" data-en="Reviews">Yorumlar</span>
+        <h2 data-tr="Gezginler ne diyor" data-en="What travelers say">Gezginler ne diyor</h2>
+      </div>
+      <div class="reviews-row">
+        <div class="review reveal">
+          <div class="stars" aria-label="5 / 5">★★★★★</div>
+          <p data-tr="“Gece 3'te açık olan en iyi döner! Kocaman porsiyon, çok lezzetli.”" data-en="“Best döner open at 3am! Huge portion and so tasty.”">“Gece 3'te açık olan en iyi döner! Kocaman porsiyon, çok lezzetli.”</p>
+          <div class="who"><span class="av">A</span><span data-tr="Anna · Almanya" data-en="Anna · Germany">Anna · Almanya</span></div>
+        </div>
+        <div class="review reveal">
+          <div class="stars" aria-label="5 / 5">★★★★★</div>
+          <p data-tr="“Metro'nun hemen yanında, fiyatlar net, ekip İngilizce biliyor.”" data-en="“Right by the Metro, clear prices, staff speak English.”">“Metro'nun hemen yanında, fiyatlar net, ekip İngilizce biliyor.”</p>
+          <div class="who"><span class="av">J</span><span data-tr="James · İngiltere" data-en="James · UK">James · İngiltere</span></div>
+        </div>
+        <div class="review reveal">
+          <div class="stars" aria-label="5 / 5">★★★★★</div>
+          <p data-tr="“Burger taze, patates bol. Taksim'de hızlı bir durak için ideal.”" data-en="“Fresh burger, loads of fries. Perfect quick stop in Taksim.”">“Burger taze, patates bol. Taksim'de hızlı bir durak için ideal.”</p>
+          <div class="who"><span class="av">M</span><span data-tr="Maria · İspanya" data-en="Maria · Spain">Maria · İspanya</span></div>
+        </div>
+        <div class="review reveal">
+          <div class="stars" aria-label="5 / 5">★★★★★</div>
+          <p data-tr="“Geç saatte kurtarıcı. Sıcak, hızlı, uygun fiyat.”" data-en="“A late-night lifesaver. Hot, fast and cheap.”">“Geç saatte kurtarıcı. Sıcak, hızlı, uygun fiyat.”</p>
+          <div class="who"><span class="av">L</span><span data-tr="Luca · İtalya" data-en="Luca · Italy">Luca · İtalya</span></div>
+        </div>
+      </div>
+      <div class="rating-band reveal">
+        <span class="big tnum" data-count="4.5">4.5</span>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><span class="tnum" data-count="1200" data-suffix="+">1,200+</span> <span data-tr="Google değerlendirmesi" data-en="reviews on Google">Google değerlendirmesi</span></span>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z" target="_blank" rel="noopener" data-tr="Google'da Oku" data-en="Read on Google">Google'da Oku</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FIND US ===================== -->
+  <section class="section accent" id="find">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-tr="Bizi bul" data-en="Find us">Bizi bul</span>
+        <h2 data-tr="Taksim'in tam ortasında" data-en="Right in the middle of Taksim">Taksim'in tam ortasında</h2>
+      </div>
+      <div class="find-grid">
+        <div class="map-card reveal">
+          <iframe title="Taksim Döner & Burger — map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=41.0364979,28.9826732&z=17&output=embed"></iframe>
+        </div>
+        <div class="find-info">
+          <div class="info-row reveal">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><h3 data-tr="Adres" data-en="Address">Adres</h3><p>Taksim Meydanı, Beyoğlu, 34435 İstanbul</p></div>
+          </div>
+          <div class="info-row reveal">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5l7 7-7 7M4 12h16"/></svg></span>
+            <div><h3 data-tr="Yürüme mesafesi" data-en="Walking distance">Yürüme mesafesi</h3>
+              <div class="walk-pills">
+                <span data-tr="Taksim Meydanı · 1 dk" data-en="Taksim Square · 1 min">Taksim Meydanı · 1 dk</span>
+                <span data-tr="İstiklal Cd. · 3 dk" data-en="İstiklal St. · 3 min">İstiklal Cd. · 3 dk</span>
+                <span data-tr="Metro (M2) · 1 dk" data-en="Metro (M2) · 1 min">Metro (M2) · 1 dk</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-row reveal">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h3 data-tr="Saatler" data-en="Hours">Saatler</h3>
+              <table class="hours-table tnum"><tr><td data-tr="Pazartesi – Pazar" data-en="Monday – Sunday">Pazartesi – Pazar</td><td data-openstate data-tr="24 saat açık" data-en="Open 24 hours">24 saat açık</td></tr></table>
+            </div>
+          </div>
+          <div class="info-row reveal">
+            <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.05.36 2.07.7 3.06a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.02-1.27a2 2 0 0 1 2.11-.45c.99.34 2.01.57 3.06.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div><h3 data-tr="Telefon" data-en="Phone">Telefon</h3><p><a href="tel:+90XXXXXXXXXX" data-copy="+90XXXXXXXXXX">+90 XXX XXX XX XX</a></p></div>
+          </div>
+          <a class="btn btn-primary reveal" href="https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z" target="_blank" rel="noopener" data-tr="Yol Tarifi Al" data-en="Get Directions">Yol Tarifi Al</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section alt" id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-tr="SSS" data-en="FAQ">SSS</span>
+        <h2 data-tr="Sık sorulanlar" data-en="Frequently asked">Sık sorulanlar</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary><span data-tr="Saatleriniz nedir?" data-en="What are your hours?">Saatleriniz nedir?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans" data-tr="7 gün 24 saat açığız — gece geç saatler dahil." data-en="We're open 24 hours, 7 days a week — including late nights.">7 gün 24 saat açığız — gece geç saatler dahil.</div>
+        </details>
+        <details class="reveal">
+          <summary><span data-tr="Etler helal mi?" data-en="Is the meat halal?">Etler helal mi?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans" data-tr="(Doğrulanacak) Helal seçenekler sunuyoruz — sahibi onaylayınca güncellenecek." data-en="(To verify) We offer halal options — to be confirmed by the owner.">(Doğrulanacak) Helal seçenekler sunuyoruz — sahibi onaylayınca güncellenecek.</div>
+        </details>
+        <details class="reveal">
+          <summary><span data-tr="Kart geçiyor mu?" data-en="Do you take cards?">Kart geçiyor mu?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans" data-tr="Nakit ve kart kabul edilir. (Sahibi onaylayacak.)" data-en="Cash and card accepted. (To be confirmed by the owner.)">Nakit ve kart kabul edilir. (Sahibi onaylayacak.)</div>
+        </details>
+        <details class="reveal">
+          <summary><span data-tr="Paket / teslimat var mı?" data-en="Takeaway / delivery?">Paket / teslimat var mı?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans" data-tr="Paket servis mevcut. Teslimat seçenekleri sahibi tarafından eklenecek." data-en="Takeaway available. Delivery options to be added by the owner.">Paket servis mevcut. Teslimat seçenekleri sahibi tarafından eklenecek.</div>
+        </details>
+        <details class="reveal">
+          <summary><span data-tr="Alerjen bilgisi?" data-en="Allergen info?">Alerjen bilgisi?</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="ans" data-tr="Alerjenler için lütfen ekibe sorun — gluten, süt, soğan vb." data-en="Please ask staff about allergens — gluten, dairy, onion, etc.">Alerjenler için lütfen ekibe sorun — gluten, süt, soğan vb.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRE-FOOTER CTA BAND (photo + parallax) ===================== -->
+  <section class="cta-band" aria-label="Visit us">
+    <div class="media" data-parallax="-10">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&h=900&q=80" data-fallback="assets/hero.svg" width="1600" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+    </div>
+    <div class="scrim"></div>
+    <div class="wrap reveal">
+      <span class="open-pill" data-openstate><span class="dot"></span><span data-tr="Şu an açık · 7/24" data-en="Open now · 24/7">Şu an açık · 7/24</span></span>
+      <span class="eyebrow" data-tr="Acıktın mı?" data-en="Hungry right now?">Acıktın mı?</span>
+      <h2 data-tr="Şu an aç mısın? 7/24 açığız — Taksim Meydanı'na 2 dakika." data-en="Hungry right now? We're open 24/7 — 2 minutes from Taksim Square.">Şu an aç mısın? 7/24 açığız — Taksim Meydanı'na 2 dakika.</h2>
+      <span class="rating-chip"><span class="star">★</span> <span class="tnum">4.5</span> <span data-tr="Google'da" data-en="on Google">Google'da</span></span>
+      <div class="cta-row">
+        <a class="btn btn-white" href="https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z" target="_blank" rel="noopener" data-tr="Yol Tarifi Al" data-en="Get Directions">Yol Tarifi Al</a>
+        <a class="btn btn-outline" href="tel:+90XXXXXXXXXX" data-tr="Hemen Ara" data-en="Call Now">Hemen Ara</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM STRIP ===================== -->
+  <section class="ig" aria-label="Instagram">
+    <div class="wrap ig-head reveal">
+      <span class="at"><span class="ic">◎</span> @taksimdonerburger</span>
+      <a class="follow" href="https://instagram.com/" target="_blank" rel="noopener" data-tr="Takip Et" data-en="Follow">Takip Et</a>
+    </div>
+    <div class="ig-marquee">
+      <div class="ig-track" id="igTrack"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <a class="brandmark" href="#top"><img class="logo" src="assets/favicon.svg" width="30" height="30" alt="" /><span>Taksim <span style="color:var(--amber)">Döner</span> &amp; Burger</span></a>
+          <p data-tr="7/24 sıcak döner &amp; burger — Taksim'in göbeğinde, Metro'ya 1 dakika." data-en="Hot döner &amp; burgers 24/7 — in the heart of Taksim, 1 minute from the Metro.">7/24 sıcak döner &amp; burger — Taksim'in göbeğinde, Metro'ya 1 dakika.</p>
+          <div class="social">
+            <a href="https://wa.me/90XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.7-6.2A11.9 11.9 0 1 1 12 24a11.9 11.9 0 0 1-5.7-1.46L.06 24zM6.6 20.1l.36.22a9.9 9.9 0 1 0-3.34-3.32l.23.37-1 3.66 3.75-.93zM17.9 14.3c-.07-.12-.27-.2-.56-.34s-1.72-.85-1.99-.95-.46-.14-.65.14-.74.95-.9 1.14-.34.21-.62.07a8.1 8.1 0 0 1-2.39-1.47 9 9 0 0 1-1.65-2.06c-.17-.3 0-.45.13-.6s.28-.34.42-.51a2 2 0 0 0 .28-.47.51.51 0 0 0 0-.49c-.07-.14-.65-1.56-.89-2.14s-.47-.48-.65-.49h-.56a1.06 1.06 0 0 0-.77.36 3.25 3.25 0 0 0-1 2.41 5.66 5.66 0 0 0 1.18 3 12.92 12.92 0 0 0 4.94 4.36 16.6 16.6 0 0 0 1.65.61 4 4 0 0 0 1.82.11 2.98 2.98 0 0 0 1.95-1.37 2.41 2.41 0 0 0 .17-1.38z"/></svg></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+            <a href="tel:+90XXXXXXXXXX" aria-label="Call / Ara"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.05.36 2.07.7 3.06a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.02-1.27a2 2 0 0 1 2.11-.45c.99.34 2.01.57 3.06.7A2 2 0 0 1 22 16.92z"/></svg></a>
+          </div>
+        </div>
+        <div class="links">
+          <h4 data-tr="Keşfet" data-en="Explore">Keşfet</h4>
+          <a href="#menu" data-tr="Menü" data-en="Menu">Menü</a>
+          <a href="#gallery" data-tr="Galeri" data-en="Gallery">Galeri</a>
+          <a href="#reviews" data-tr="Yorumlar" data-en="Reviews">Yorumlar</a>
+          <a href="#find" data-tr="Bizi bul" data-en="Find us">Bizi bul</a>
+          <a href="#faq" data-tr="SSS" data-en="FAQ">SSS</a>
+        </div>
+        <div>
+          <h4 data-tr="Saatler" data-en="Hours">Saatler</h4>
+          <div class="foot-hours" data-tr="Pazartesi – Pazar<br>24 saat açık" data-en="Monday – Sunday<br>Open 24 hours">Pazartesi – Pazar<br>24 saat açık</div>
+          <span class="foot-open" data-openstate><span class="dot"></span><span data-tr="Şu an açık" data-en="Open now">Şu an açık</span></span>
+        </div>
+        <div>
+          <h4 data-tr="Bizi bul" data-en="Find us">Bizi bul</h4>
+          <a class="map-thumb" href="https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z" target="_blank" rel="noopener" aria-label="Get directions" style="background:radial-gradient(circle at 60% 38%, #34302b, #1f1c19)">
+            <span class="pin"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="go" data-tr="Yol Tarifi" data-en="Directions">Yol Tarifi</span>
+          </a>
+          <p style="margin-top:10px">Taksim Meydanı, Beyoğlu, İstanbul</p>
+        </div>
+      </div>
+      <div class="foot-marquee" aria-hidden="true">
+        <div class="track" id="footMarquee"></div>
+      </div>
+      <div class="legal">
+        <span>© <span id="year">2026</span> Taksim Döner &amp; Burger</span>
+        <span data-tr="Taksim / Beyoğlu, İstanbul" data-en="Taksim / Beyoğlu, Istanbul">Taksim / Beyoğlu, İstanbul</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE ACTION BAR ===================== -->
+  <nav class="action-bar" aria-label="Quick actions">
+    <a href="https://www.google.com/maps/place/Taksim+D%C3%B6ner+%26+Burger/@41.0364979,28.9826732,17z" target="_blank" rel="noopener">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span class="lbl" data-tr="Yol Tarifi" data-en="Directions">Yol Tarifi</span>
+    </a>
+    <a class="call" href="tel:+90XXXXXXXXXX">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.05.36 2.07.7 3.06a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.02-1.27a2 2 0 0 1 2.11-.45c.99.34 2.01.57 3.06.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="lbl" data-tr="Ara" data-en="Call">Ara</span>
+    </a>
+    <a href="#menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <span class="lbl" data-tr="Menü" data-en="Menu">Menü</span>
+    </a>
+  </nav>
+
+  <!-- Floating WhatsApp (desktop) -->
+  <a class="wa-float" href="https://wa.me/90XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.7-6.2A11.9 11.9 0 1 1 12 24a11.9 11.9 0 0 1-5.7-1.46L.06 24zM6.6 20.1l.36.22a9.9 9.9 0 1 0-3.34-3.32l.23.37-1 3.66 3.75-.93zM17.9 14.3c-.07-.12-.27-.2-.56-.34s-1.72-.85-1.99-.95-.46-.14-.65.14-.74.95-.9 1.14-.34.21-.62.07a8.1 8.1 0 0 1-2.39-1.47 9 9 0 0 1-1.65-2.06c-.17-.3 0-.45.13-.6s.28-.34.42-.51a2 2 0 0 0 .28-.47.51.51 0 0 0 0-.49c-.07-.14-.65-1.56-.89-2.14s-.47-.48-.65-.49h-.56a1.06 1.06 0 0 0-.77.36 3.25 3.25 0 0 0-1 2.41 5.66 5.66 0 0 0 1.18 3 12.92 12.92 0 0 0 4.94 4.36 16.6 16.6 0 0 0 1.65.61 4 4 0 0 0 1.82.11 2.98 2.98 0 0 0 1.95-1.37 2.41 2.41 0 0 0 .17-1.38z"/></svg>
+  </a>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo">
+    <button class="lb-close" id="lbClose" type="button" aria-label="Close / Kapat"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="lb-nav prev" id="lbPrev" type="button" aria-label="Previous"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button class="lb-nav next" id="lbNext" type="button" aria-label="Next"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+    <figure>
+      <img id="lbImg" src="" alt="" />
+      <figcaption><span class="lb-name" id="lbName"></span><span class="lb-price tnum" id="lbPrice"></span></figcaption>
+    </figure>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="js/main.js" defer></script>
+  <script>
+    // build the seamless marquee (duplicated track) — TR/EN aware, refreshed on toggle
+    (function () {
+      var track = document.getElementById("marqueeTrack");
+      if (!track) return;
+      var items = {
+        tr: ["7/24 Açık", "Izgaradan taze", "Helal", "Taksim Meydanı", "İngilizce menü"],
+        en: ["Open 24/7", "Fresh off the grill", "Halal", "Taksim Square", "English menu"]
+      };
+      var footTrack = document.getElementById("footMarquee");
+      function build() {
+        var lang = document.documentElement.lang === "en" ? "en" : "tr";
+        var one = items[lang].map(function (t) { return "<span>" + t + "</span>"; }).join("");
+        track.innerHTML = one + one; // duplicate for seamless loop
+        if (footTrack) footTrack.innerHTML = one + one + one + one;
+      }
+      build();
+      // rebuild after main.js (deferred) has applied the saved/auto language
+      document.addEventListener("DOMContentLoaded", build);
+      ["btnTR", "btnEN"].forEach(function (id) {
+        var b = document.getElementById(id); if (b) b.addEventListener("click", build);
+      });
+    })();
+  </script>
+  <script>
+    // build the Instagram strip (real stock photos, duplicated for a seamless marquee)
+    (function () {
+      var track = document.getElementById("igTrack");
+      if (!track) return;
+      var shots = [
+        ["1544025162-d76694265947", "Izgara", "At the grill"],
+        ["1633321702518-7feccafb94d5", "Tavuk döner dürüm", "Chicken döner wrap"],
+        ["1550547660-d9450f859349", "Cheeseburger", "Cheeseburger"],
+        ["1529006557810-274b9b2fc783", "Döner şişte", "Döner on the spit"],
+        ["1571091718767-18b5b1457add", "Taze burger", "Fresh burger"],
+        ["1565299624946-b28f40a0ae38", "Sokak lezzeti", "Street food"],
+        ["1524231757912-21f4fe3a7200", "Taksim", "Taksim"],
+        ["1414235077428-338989a2e8c0", "Mutlu misafirler", "Happy guests"]
+      ];
+      var fb = ["assets/doner.svg","assets/burger.svg","assets/burger.svg","assets/doner.svg","assets/burger.svg","assets/sides.svg","assets/hero.svg","assets/wrap.svg"];
+      function build(set) {
+        return set.map(function (s, i) {
+          var url = "https://images.unsplash.com/photo-" + s[0] + "?auto=format&fit=crop&w=400&h=400&q=75";
+          return '<button class="ig-item" type="button" data-img="' + url + '" data-name-tr="' + s[1] + '" data-name-en="' + s[2] + '" aria-label="' + s[2] + '">' +
+            '<img src="' + url + '" data-fallback="' + fb[i] + '" width="400" height="400" loading="lazy" decoding="async" alt="' + s[1] + ' / ' + s[2] + '"></button>';
+        }).join("");
+      }
+      track.innerHTML = build(shots) + build(shots); // duplicate => seamless 50% loop
+    })();
+  </script>
+
+  <!-- circular back-to-top -->
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Motion libs (deferred, optional — page works without them) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/motion.js" defer></script>
+</body>
+</html>
